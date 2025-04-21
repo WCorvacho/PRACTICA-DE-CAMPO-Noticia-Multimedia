@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticia Multimedia: El fenómeno El Niño en Perú</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar">
+      <a href="#">Inicio</a>
+      <a href="#noticia">Noticia</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección de Noticia -->
+  <section id="noticia" class="section noticia">
+    <h1>El Fenómeno de El Niño: Impactos y Resiliencia en Perú</h1>
+    <p class="date">Publicado el 9 de febrero de 2017 | Autor: María García</p>
+    <p>El Fenómeno de El Niño de 2017 causó estragos a lo largo de la costa norte del Perú, con intensas lluvias que provocaron inundaciones y deslizamientos. Comunidades enteras se vieron afectadas, miles de personas evacuadas y miles de hectáreas de cultivo arruinadas.</p>
+    <p>Sin embargo, la rápida respuesta de los gobiernos locales y organizaciones civiles permitió la creación de programas de ayuda y recuperación que, a largo plazo, han fortalecido la resiliencia de estas poblaciones.</p>
+  </section>
+
+  <!-- Sección de Multimedia -->
+  <section id="multimedia" class="section multimedia">
+    <h2>Galería de Imágenes</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/inundacion1.jpg" alt="Inundaciones en Piura">
+        <div class="caption">Inundaciones en Piura</div>
+      </div>
+      <div class="slide fade">
+        <img src="images/rescate2.jpg" alt="Equipo de rescate en acción">
+        <div class="caption">Equipo de rescate en acción</div>
+      </div>
+      <div class="slide fade">
+        <img src="images/recuperacion3.jpg" alt="Proceso de recuperación">
+        <div class="caption">Proceso de recuperación comunitaria</div>
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <h2>Video Reportaje</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1nP2aWErYJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>Audio Narrado</h2>
+    <audio controls>
+      <source src="audio/narracion_el_nino.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="tu@ejemplo.com" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Noticias Multimedia Perú. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
